@@ -3,70 +3,45 @@
 //  Multilogin
 //
 //  Created by Abdiel Mg on 01/04/24.
-//
 
 import SwiftUI
 import Firebase
-import FirebaseAuth
 
-struct ContentView: View {
-    var body: some View {
-        VStack {
-            if let user = Auth.auth().currentUser {
-                Text("Hola, \(user.displayName ?? "Usuario")")
-                Button("Cerrar sesión") {
-                    do {
-                        try Auth.auth().signOut()
-                    } catch {
-                        print("Error al cerrar sesión: \(error.localizedDescription)")
-                    }
+@main
+struct Multilogin: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @StateObject private var authViewModel = AuthViewModel()
+    @State private var isAuthenticated = false
+    
+    var body: some Scene {
+        WindowGroup {
+            ContentView(isAuthenticated: $isAuthenticated)
+                .environmentObject(authViewModel)
+                .onAppear {
+                    checkUserAuthentication()
                 }
-            } else {
-                Button(action: signInWithGoogle) {
-                    Text("Iniciar sesión con Google")
-                }
-            }
         }
     }
     
-    func signInWithGoogle() {
-        let config = GIDConfiguration(clientID: FirebaseApp.app()?.options.clientID ?? "")
-        GIDSignIn.sharedInstance.signIn(with: config, presenting: UIApplication.shared.windows.first?.rootViewController) { user, error in
-            if let error = error {
-                print("Error al iniciar sesión con Google: \(error.localizedDescription)")
-                return
-            }
-            
-            guard let authentication = user?.authentication,
-                  let idToken = authentication.idToken,
-                  let accessToken = authentication.accessToken else {
-                print("Error al obtener los tokens de autenticación de Google")
-                return
-            }
-            
-            let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: accessToken)
-            
-            Auth.auth().signIn(with: credential) { result, error in
-                if let error = error {
-                    print("Error al iniciar sesión con Firebase: \(error.localizedDescription)")
-                    return
-                }
-                
-                if let result = result {
-                    print("Inicio de sesión exitoso: \(result.user.uid)")
-                }
-            }
+    private func checkUserAuthentication() {
+        $authViewModel.signedInCallback = { isSignedIn in
+            isAuthenticated = isSignedIn
         }
     }
 }
 
-@main
-struct MultiloginApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+struct ContentView: View {
+    @EnvironmentObject var authViewModel: AuthViewModel
+    @Binding var isAuthenticated: Bool
     
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+    var body: some View {
+        if isAuthenticated {
+            // Usuario autenticado, mostrar vista principal
+            Text("¡Bienvenido!")
+                .padding()
+        } else {
+            // Usuario no autenticado, mostrar vista de inicio de sesión
+            LoginView()
         }
     }
 }
