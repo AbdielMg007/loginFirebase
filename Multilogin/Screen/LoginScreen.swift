@@ -13,6 +13,8 @@ import Firebase
 struct LoginScreen: View {
     @State var username: String = ""
     @State var password: String = ""
+    @State var isLoggedIn: Bool = false 
+
     
     var body: some View {
         VStack {
@@ -69,6 +71,7 @@ struct LoginScreen: View {
                             }
                             
                             print("sign in")
+                            isLoggedIn = true
                     }
                     }
                 } // GoogleSiginBtn
@@ -76,6 +79,9 @@ struct LoginScreen: View {
             .padding(.top, 52)
             Spacer()
         }
+        .fullScreenCover(isPresented: $isLoggedIn, content: {
+                    Home()
+                })
     }
 }
 

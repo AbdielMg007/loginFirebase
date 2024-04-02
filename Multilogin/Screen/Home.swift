@@ -6,10 +6,31 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct Home: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Iniciaste Sesión")
+                .padding()
+            
+            Button(action: {
+                do {
+                    try Auth.auth().signOut()
+                } catch {
+                    print("Error al cerrar sesión: \(error.localizedDescription)")
+                }
+            }) {
+                Text("Cerrar Sesión")
+                    .padding()
+                    .background(Color.red)
+                    .foregroundColor(.white)
+                    .cornerRadius(8)
+            }
+            .padding()
+            
+            Spacer()
+        }
     }
 }
 
