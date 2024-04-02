@@ -2,7 +2,22 @@
 //  AppDelegate.swift
 //  Multilogin
 //
-//  Created by Abdiel Mg on 02/04/24.
+//  Created by Abdiel Mg on 01/04/24.
 //
+import UIKit
+import Firebase
+import GoogleSignIn
 
-import Foundation
+class AppDelegate: NSObject, UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        FirebaseApp.configure()
+        return true
+    }
+    
+    @available(iOS 9.0, *)
+    func application(_ application: UIApplication, open url: URL,
+                     options: [UIApplication.OpenURLOptionsKey: Any])
+      -> Bool {
+      return GIDSignIn.sharedInstance.handle(url)
+    }
+}

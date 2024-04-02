@@ -9,15 +9,17 @@ import SwiftUI
 
 @main
 struct MultiloginApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    @StateObject private var authViewModel = AuthViewModel()
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @AppStorage("signIn") var isSignIn = false
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(authViewModel)
+            if !isSignIn {
+                LoginScreen()
+            } else {
+                Home()
+            }
         }
     }
 }
-
 

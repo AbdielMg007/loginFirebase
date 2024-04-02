@@ -8,33 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		4D315FB02BBB52E900D524EB /* MultiloginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D315FAF2BBB52E900D524EB /* MultiloginApp.swift */; };
-		4D315FB22BBB52E900D524EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D315FB12BBB52E900D524EB /* ContentView.swift */; };
 		4D315FB42BBB52EC00D524EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D315FB32BBB52EC00D524EB /* Assets.xcassets */; };
 		4D315FB72BBB52EC00D524EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D315FB62BBB52EC00D524EB /* Preview Assets.xcassets */; };
 		4D315FC42BBB57D900D524EB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4D315FC32BBB57D900D524EB /* FirebaseAnalytics */; };
 		4D315FC62BBB57D900D524EB /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 4D315FC52BBB57D900D524EB /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		4D315FCB2BBB589600D524EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D315FCA2BBB589600D524EB /* GoogleService-Info.plist */; };
-		4D315FCF2BBB58CB00D524EB /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D315FCE2BBB58CB00D524EB /* AuthViewModel.swift */; };
 		4D315FD22BBB58F000D524EB /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 4D315FD12BBB58F000D524EB /* GoogleSignIn */; };
 		4D315FD42BBB58F000D524EB /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4D315FD32BBB58F000D524EB /* GoogleSignInSwift */; };
 		4D315FD72BBB5DF600D524EB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4D315FD62BBB5DF600D524EB /* FirebaseAuth */; };
 		4D315FD92BBB5E2200D524EB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4D315FD82BBB5E2200D524EB /* FirebaseAnalytics */; };
 		4D315FDB2BBB5E2200D524EB /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 4D315FDA2BBB5E2200D524EB /* FirebaseAnalyticsWithoutAdIdSupport */; };
-		4D315FDD2BBB63FA00D524EB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D315FDC2BBB63FA00D524EB /* LoginView.swift */; };
-		4D315FDF2BBB65C000D524EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D315FDE2BBB65C000D524EB /* AppDelegate.swift */; };
+		4DAB40E12BBBFDDA0060C0F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB40E02BBBFDDA0060C0F0 /* AppDelegate.swift */; };
+		4DAB40E32BBBFE220060C0F0 /* +View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB40E22BBBFE220060C0F0 /* +View.swift */; };
+		4DAB40E82BBBFE8F0060C0F0 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB40E72BBBFE8F0060C0F0 /* Home.swift */; };
+		4DAB40EA2BBBFEAF0060C0F0 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB40E92BBBFEAF0060C0F0 /* LoginScreen.swift */; };
+		4DAB40EC2BBBFF320060C0F0 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB40EB2BBBFF320060C0F0 /* CustomButton.swift */; };
+		4DAB40EE2BBBFF510060C0F0 /* CustomTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB40ED2BBBFF510060C0F0 /* CustomTextfield.swift */; };
+		4DAB40F02BBBFF690060C0F0 /* GoogleSiginBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB40EF2BBBFF690060C0F0 /* GoogleSiginBtn.swift */; };
+		4DAB40F22BBBFF7D0060C0F0 /* LoginHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB40F12BBBFF7D0060C0F0 /* LoginHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4D315FAC2BBB52E900D524EB /* Multilogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multilogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D315FAF2BBB52E900D524EB /* MultiloginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiloginApp.swift; sourceTree = "<group>"; };
-		4D315FB12BBB52E900D524EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4D315FB32BBB52EC00D524EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D315FB62BBB52EC00D524EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4D315FCA2BBB589600D524EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		4D315FCE2BBB58CB00D524EB /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		4D315FD52BBB5C5B00D524EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		4D315FDC2BBB63FA00D524EB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		4D315FDE2BBB65C000D524EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4DAB40E02BBBFDDA0060C0F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4DAB40E22BBBFE220060C0F0 /* +View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+View.swift"; sourceTree = "<group>"; };
+		4DAB40E72BBBFE8F0060C0F0 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		4DAB40E92BBBFEAF0060C0F0 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		4DAB40EB2BBBFF320060C0F0 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		4DAB40ED2BBBFF510060C0F0 /* CustomTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextfield.swift; sourceTree = "<group>"; };
+		4DAB40EF2BBBFF690060C0F0 /* GoogleSiginBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSiginBtn.swift; sourceTree = "<group>"; };
+		4DAB40F12BBBFF7D0060C0F0 /* LoginHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,14 +82,14 @@
 		4D315FAE2BBB52E900D524EB /* Multilogin */ = {
 			isa = PBXGroup;
 			children = (
-				4D315FD52BBB5C5B00D524EB /* Info.plist */,
-				4D315FCA2BBB589600D524EB /* GoogleService-Info.plist */,
-				4D315FC92BBB582800D524EB /* View */,
-				4D315FC82BBB581800D524EB /* ViewModel */,
-				4D315FAF2BBB52E900D524EB /* MultiloginApp.swift */,
-				4D315FDE2BBB65C000D524EB /* AppDelegate.swift */,
 				4D315FB32BBB52EC00D524EB /* Assets.xcassets */,
+				4DAB40DF2BBBFD960060C0F0 /* Helper */,
 				4D315FB52BBB52EC00D524EB /* Preview Content */,
+				4DAB40E62BBBFE7A0060C0F0 /* Screen */,
+				4D315FC92BBB582800D524EB /* View */,
+				4D315FAF2BBB52E900D524EB /* MultiloginApp.swift */,
+				4D315FCA2BBB589600D524EB /* GoogleService-Info.plist */,
+				4D315FD52BBB5C5B00D524EB /* Info.plist */,
 			);
 			path = Multilogin;
 			sourceTree = "<group>";
@@ -94,21 +102,33 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		4D315FC82BBB581800D524EB /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				4D315FCE2BBB58CB00D524EB /* AuthViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		4D315FC92BBB582800D524EB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4D315FB12BBB52E900D524EB /* ContentView.swift */,
-				4D315FDC2BBB63FA00D524EB /* LoginView.swift */,
+				4DAB40EB2BBBFF320060C0F0 /* CustomButton.swift */,
+				4DAB40ED2BBBFF510060C0F0 /* CustomTextfield.swift */,
+				4DAB40EF2BBBFF690060C0F0 /* GoogleSiginBtn.swift */,
+				4DAB40F12BBBFF7D0060C0F0 /* LoginHeader.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		4DAB40DF2BBBFD960060C0F0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4DAB40E02BBBFDDA0060C0F0 /* AppDelegate.swift */,
+				4DAB40E22BBBFE220060C0F0 /* +View.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		4DAB40E62BBBFE7A0060C0F0 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				4DAB40E72BBBFE8F0060C0F0 /* Home.swift */,
+				4DAB40E92BBBFEAF0060C0F0 /* LoginScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,11 +215,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D315FDF2BBB65C000D524EB /* AppDelegate.swift in Sources */,
-				4D315FCF2BBB58CB00D524EB /* AuthViewModel.swift in Sources */,
-				4D315FB22BBB52E900D524EB /* ContentView.swift in Sources */,
+				4DAB40E32BBBFE220060C0F0 /* +View.swift in Sources */,
 				4D315FB02BBB52E900D524EB /* MultiloginApp.swift in Sources */,
-				4D315FDD2BBB63FA00D524EB /* LoginView.swift in Sources */,
+				4DAB40E12BBBFDDA0060C0F0 /* AppDelegate.swift in Sources */,
+				4DAB40EE2BBBFF510060C0F0 /* CustomTextfield.swift in Sources */,
+				4DAB40F02BBBFF690060C0F0 /* GoogleSiginBtn.swift in Sources */,
+				4DAB40EC2BBBFF320060C0F0 /* CustomButton.swift in Sources */,
+				4DAB40EA2BBBFEAF0060C0F0 /* LoginScreen.swift in Sources */,
+				4DAB40F22BBBFF7D0060C0F0 /* LoginHeader.swift in Sources */,
+				4DAB40E82BBBFE8F0060C0F0 /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
